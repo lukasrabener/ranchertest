@@ -1,5 +1,5 @@
-apiVersion: provisioning.cattle.io/v1
 kind: Cluster
+apiVersion: provisioning.cattle.io/v1
 metadata:
   name: ecsdev
   namespace: fleet-default
