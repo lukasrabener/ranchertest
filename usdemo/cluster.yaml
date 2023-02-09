@@ -1,7 +1,7 @@
 kind: Cluster
 apiVersion: provisioning.cattle.io/v1
 metadata:
-  name: ecsdev
+  name: newkensington
   namespace: fleet-default
 spec:
   rkeConfig:
@@ -11,8 +11,8 @@ spec:
         machineConfigRef:
           apiVersion: elemental.cattle.io/v1beta1
           kind: MachineInventorySelectorTemplate
-          name: ecsdevselector
-        name: ecsdev
+          name: newkensingtonselector
+        name: newkensington
         quantity: 1
         unhealthyNodeTimeout: 0s
         workerRole: true

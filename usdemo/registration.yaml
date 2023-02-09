@@ -1,7 +1,7 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:
-  name: ecslabmachine
+  name: nknedge
   namespace: fleet-default
 spec:
   config:
@@ -14,6 +14,9 @@ spec:
         reboot: true
         device: dev/sda
         debug: true
-  machineName: ecslabmachine
+      # registration:
+      #   emulate-tpm: true
+      #   emulated-tpm-seed: 1
+  machineName: nknedge
   machineInventoryLabels:
-    location: "europe"
+    location: "usa"
