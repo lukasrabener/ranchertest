@@ -1,0 +1,22 @@
+apiVersion: elemental.cattle.io/v1beta1
+kind: MachineRegistration
+metadata:
+  name: nknedge1
+  namespace: fleet-default
+spec:
+  config:
+    cloud-config:
+      users:
+        - name: root
+          passwd: admin@123
+    elemental:
+      install:
+        reboot: true
+        device: dev/sda
+        debug: true
+      # registration:
+      #   emulate-tpm: true
+      #   emulated-tpm-seed: 1
+  machineName: nknedge1
+  machineInventoryLabels:
+    location: "usa"
