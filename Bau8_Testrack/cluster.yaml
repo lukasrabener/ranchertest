@@ -12,7 +12,7 @@ spec:
           apiVersion: elemental.cattle.io/v1beta1
           kind: MachineInventorySelectorTemplate
           name: ecsdevselector
-        name: ECS_dev
+        name: ecs-dev
         quantity: 2
         unhealthyNodeTimeout: 0s
         workerRole: true
