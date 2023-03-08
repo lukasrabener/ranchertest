@@ -1,7 +1,7 @@
 kind: Cluster
 apiVersion: provisioning.cattle.io/v1
 metadata:
-  name: ECS_dev
+  name: ECS-dev
   namespace: fleet-default
 spec:
   rkeConfig:
