@@ -1,14 +1,14 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:
-  name: ecslab
+  name: IPC211
   namespace: fleet-default
 spec:
   config:
     cloud-config:
       users:
-        - name: root
-          passwd: admin@123
+        - name: "root"
+          passwd: "rjpAK1K7Qpc6AafXm9Xg"
     elemental:
       install:
         reboot: true
@@ -17,6 +17,6 @@ spec:
       registration:
         emulate-tpm: true
         emulated-tpm-seed: 1
-  machineName: ecslab
+  machineName: IPC211
   machineInventoryLabels:
-    location: "europe"
+    location: "nuernberg"

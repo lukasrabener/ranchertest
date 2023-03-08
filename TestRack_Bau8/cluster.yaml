@@ -1,7 +1,7 @@
 kind: Cluster
 apiVersion: provisioning.cattle.io/v1
 metadata:
-  name: ecsdev
+  name: ECS_dev
   namespace: fleet-default
 spec:
   rkeConfig:
@@ -12,8 +12,8 @@ spec:
           apiVersion: elemental.cattle.io/v1beta1
           kind: MachineInventorySelectorTemplate
           name: ecsdevselector
-        name: ecsdev
-        quantity: 1
+        name: ECS_dev
+        quantity: 2
         unhealthyNodeTimeout: 0s
         workerRole: true
-  kubernetesVersion: v1.23.7+k3s1
+  kubernetesVersion: v1.23.16+k3s1
