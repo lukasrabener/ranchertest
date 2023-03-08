@@ -1,7 +1,7 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:
-  name: IPC211
+  name: ipc211
   namespace: fleet-default
 spec:
   config:
@@ -17,6 +17,6 @@ spec:
       registration:
         emulate-tpm: true
         emulated-tpm-seed: 1
-  machineName: IPC211
+  machineName: ipc211
   machineInventoryLabels:
     location: "nuernberg"
