@@ -16,7 +16,7 @@ spec:
         debug: true
       registration:
         emulate-tpm: true
-        emulated-tpm-seed: 1
+        emulated-tpm-seed: -1
   machineName: ipc-211
   machineInventoryLabels:
     location: 'nue_vo'
