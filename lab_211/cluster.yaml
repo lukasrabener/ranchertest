@@ -11,9 +11,9 @@ spec:
         machineConfigRef:
           apiVersion: elemental.cattle.io/v1beta1
           kind: MachineInventorySelectorTemplate
-          name: ecsdevselector
-        name: ecs-dev
-        quantity: 2
+          name: ecs-dev-selector
+        name: pool1
+        quantity: 1
         unhealthyNodeTimeout: 0s
         workerRole: true
-  kubernetesVersion: v1.23.16+k3s1
+  kubernetesVersion: v1.24.8+k3s1

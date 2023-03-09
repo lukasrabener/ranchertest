@@ -1,22 +1,25 @@
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:
-  name: ipc211
+  name: ipc-211
   namespace: fleet-default
 spec:
   config:
     cloud-config:
       users:
         - name: "root"
-          passwd: "rjpAK1K7Qpc6AafXm9Xg"
+          passwd: "rjpAK1K7Qpc6AafX"
     elemental:
       install:
         reboot: true
-        device: dev/sda
+        device: /dev/sda
         debug: true
       registration:
         emulate-tpm: true
         emulated-tpm-seed: 1
-  machineName: ipc211
   machineInventoryLabels:
-    location: "nuernberg"
+    location: 'nue_vo'
+    manufacturer: "${System Information/Manufacturer}"
+    productName: "${System Information/Product Name}"
+    serialNumber: "${System Information/Serial Number}"
+    machineUUID: "${System Information/UUID}"
