@@ -22,5 +22,6 @@ spec:
     location: 'nue_vo'
     manufacturer: "${System Information/Manufacturer}"
     productName: "${System Information/Product Name}"
+    version: "${System Information/Version}"
     serialNumber: "${System Information/Serial Number}"
     machineUUID: "${System Information/UUID}"
