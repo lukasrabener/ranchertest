@@ -1,0 +1,26 @@
+apiVersion: elemental.cattle.io/v1beta1
+kind: MachineRegistration
+metadata:
+  name: test-tpm
+  namespace: fleet-default
+spec:
+  config:
+    cloud-config:
+      users:
+        - name: "root"
+          passwd: "test123456"
+    elemental:
+      install:
+        reboot: false
+        device: /dev/sda
+        debug: true
+      registration:
+        emulate-tpm: true
+        emulated-tpm-seed: -1
+  machineInventoryLabels:
+    location: 'test'
+    manufacturer: "${System Information/Manufacturer}"
+    productName: "${System Information/Product Name}"
+    version: "${System Information/Version}"
+    serialNumber: "${System Information/Serial Number}"
+    machineUUID: "${System Information/UUID}"
